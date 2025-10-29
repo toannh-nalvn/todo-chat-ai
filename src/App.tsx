@@ -1,4 +1,5 @@
 import { Sidebar } from "@/components/app/Sidebar"
+import { TodoList } from "@/components/app/TodoList"
 
 function App() {
   return (
@@ -7,10 +8,8 @@ function App() {
       <Sidebar />
       {/* Cột Nội dung chính */}
       <main className="flex-1 p-8">
-        <h1 className="text-3xl font-bold">Main Content Area</h1>
-        <p className="text-muted-foreground">
-          Nội dung chính sẽ được hiển thị ở đây.
-        </p>
+        {/* Thay thế nội dung cũ bằng TodoList component */}
+        <TodoList />
       </main>
     </div>
   )
