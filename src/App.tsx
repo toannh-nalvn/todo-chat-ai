@@ -1,16 +1,10 @@
-import { Sidebar } from "@/components/app/Sidebar"
-import { TodoList } from "@/components/app/TodoList"
+import { NotesApp } from "@/components/app/NotesApp"
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-background">
-      {/* Cột Sidebar */}
-      <Sidebar />
-      {/* Cột Nội dung chính */}
-      <main className="flex-1 p-8">
-        {/* Thay thế nội dung cũ bằng TodoList component */}
-        <TodoList />
-      </main>
+    // Bỏ các lề và nền cũ để NotesApp chiếm toàn bộ màn hình
+    <div className="min-h-screen bg-background">
+      <NotesApp />
     </div>
   )
 }
